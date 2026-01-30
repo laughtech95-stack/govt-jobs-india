@@ -37,9 +37,14 @@ function matches(itemRaw) {
     const hay = `${item.title} ${item.category} ${item.state} ${item.qualification} ${item.sourceName} ${item.tags.join(" ")}`.toLowerCase();
     if (!hay.includes(q)) return false;
   }
-  if (els.category.value && item.category !== els.category.value) return false;
-  if (els.state.value && item.state !== els.state.value) return false;
-  if (els.qualification.value && item.qualification !== els.qualification.value) return false;
+
+  // Case-insensitive matching; if field missing, don't block the item
+  if (els.category.value && item.category && item.category.toLowerCase() !== els.category.value.toLowerCase()) return false;
+  if (els.state.value && item.state && item.state.toLowerCase() !== els.state.value.toLowerCase()) return false;
+  if (els.qualification.value && item.qualification) {
+    if (item.qualification.toLowerCase() !== els.qualification.value.toLowerCase()) return false;
+  }
+
   if (els.age.value) {
     const age = parseInt(els.age.value, 10);
     if (item.ageMax < age) return false;
