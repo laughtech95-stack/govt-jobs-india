@@ -1,4 +1,4 @@
-const DEMO_FALLBACK_URL = "./jobs.json";
+const DEMO_FALLBACK_URL = "https://govt-jobs-india.pages.dev/jobs.json";
 
 const els = {
   q: document.getElementById("q"),
@@ -158,6 +158,8 @@ async function loadData() {
     data = Array.isArray(json) ? json : [];
   } catch (e) {
     data = [];
+    const dbg = document.getElementById('debug');
+    if (dbg) dbg.textContent = `Debug: fetch failed (${e.message})`;
   }
   render();
 }
