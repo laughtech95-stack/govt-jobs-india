@@ -325,4 +325,5 @@ exportBtn.addEventListener('click', () => {
   URL.revokeObjectURL(url);
 });
 
-loadData();
+window.addEventListener('load', () => loadData());
+setTimeout(() => loadData(), 2000);
