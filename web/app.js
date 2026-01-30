@@ -2,9 +2,7 @@ const PRIMARY_URL = `${window.location.origin}/jobs.json`;
 const FALLBACK_URL = `https://govt-jobs-india.pages.dev/jobs.json`;
 
 window.addEventListener('error', (e) => {
-  const dbg = document.getElementById('debug');
-  if (dbg) dbg.textContent = `Debug: JS error (${e.message})`;
-});
+  });
 
 const els = {
   q: document.getElementById("q"),
@@ -86,11 +84,6 @@ function render() {
   let items = data.filter(matches);
   items = sortItems(items);
   els.count.textContent = `${items.length} result(s)`;
-  const dbg = document.getElementById('debug');
-  if (dbg) {
-    if (loadError) dbg.textContent = `Debug: fetch failed (${loadError.message})`;
-    else dbg.textContent = `Debug: items=${items.length} total=${data.length}`;
-  }
 
   const related = items.slice(0, 4).map(i => `<a href="/pages/${(i.category||'other').toLowerCase().replace(/\s+/g,'-')}-jobs.html">${i.category||'Other'} jobs</a>`).join(" · ");
 
@@ -161,31 +154,25 @@ function render() {
 
 let loadError = null;
 async function loadData() {
-  const dbg = document.getElementById('debug');
   try {
-    if (dbg) dbg.textContent = `Debug: loading ${PRIMARY_URL}`;
-    let res = await fetch(PRIMARY_URL, {cache: 'no-cache'});
+        let res = await fetch(PRIMARY_URL, {cache: 'no-cache'});
     if (!res.ok) throw new Error(`Primary fetch failed (${res.status})`);
     const text = await res.text();
     const json = JSON.parse(text);
     data = Array.isArray(json) ? json : [];
     window.data = data;
-    if (dbg) dbg.textContent = `Debug: loaded ${data.length} items`;
-  } catch (e1) {
+      } catch (e1) {
     try {
-      if (dbg) dbg.textContent = `Debug: fallback ${FALLBACK_URL}`;
-      const res2 = await fetch(FALLBACK_URL, {cache: 'no-cache'});
+            const res2 = await fetch(FALLBACK_URL, {cache: 'no-cache'});
       if (!res2.ok) throw new Error(`Fallback fetch failed (${res2.status})`);
       const text2 = await res2.text();
       const json2 = JSON.parse(text2);
       data = Array.isArray(json2) ? json2 : [];
       window.data = data;
-      if (dbg) dbg.textContent = `Debug: loaded ${data.length} items (fallback)`;
-    } catch (e2) {
+          } catch (e2) {
       data = [];
       loadError = e2;
-      if (dbg) dbg.textContent = `Debug: fetch failed (${e2.message})`;
-    }
+          }
   }
   render();
 }
