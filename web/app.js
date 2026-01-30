@@ -1,4 +1,5 @@
-const DEMO_FALLBACK_URL = `${window.location.origin}/jobs.json`;
+const PRIMARY_URL = `${window.location.origin}/jobs.json`;
+const FALLBACK_URL = `https://govt-jobs-india.pages.dev/jobs.json`;
 
 const els = {
   q: document.getElementById("q"),
@@ -156,18 +157,30 @@ function render() {
 let loadError = null;
 async function loadData() {
   const dbg = document.getElementById('debug');
-  if (dbg) dbg.textContent = `Debug: loading ${DEMO_FALLBACK_URL}`;
   try {
-    const res = await fetch(DEMO_FALLBACK_URL, {cache: 'no-cache'});
-    if (dbg) dbg.textContent = `Debug: fetch status ${res.status}`;
-    if (!res.ok) throw new Error('Fetch failed');
-    const json = await res.json();
+    if (dbg) dbg.textContent = `Debug: loading ${PRIMARY_URL}`;
+    let res = await fetch(PRIMARY_URL, {cache: 'no-cache'});
+    if (!res.ok) throw new Error(`Primary fetch failed (${res.status})`);
+    const text = await res.text();
+    const json = JSON.parse(text);
     data = Array.isArray(json) ? json : [];
+    window.data = data;
     if (dbg) dbg.textContent = `Debug: loaded ${data.length} items`;
-  } catch (e) {
-    data = [];
-    loadError = e;
-    if (dbg) dbg.textContent = `Debug: fetch failed (${e.message})`;
+  } catch (e1) {
+    try {
+      if (dbg) dbg.textContent = `Debug: fallback ${FALLBACK_URL}`;
+      const res2 = await fetch(FALLBACK_URL, {cache: 'no-cache'});
+      if (!res2.ok) throw new Error(`Fallback fetch failed (${res2.status})`);
+      const text2 = await res2.text();
+      const json2 = JSON.parse(text2);
+      data = Array.isArray(json2) ? json2 : [];
+      window.data = data;
+      if (dbg) dbg.textContent = `Debug: loaded ${data.length} items (fallback)`;
+    } catch (e2) {
+      data = [];
+      loadError = e2;
+      if (dbg) dbg.textContent = `Debug: fetch failed (${e2.message})`;
+    }
   }
   render();
 }
