@@ -9,7 +9,7 @@
 <body>
   <header class="topbar">
     <div class="brand">🇮🇳 Govt Jobs India</div>
-    <div class="tagline">Find government job notifications based on your interests</div>
+    <div class="tagline" data-i18n="tagline">Find government job notifications based on your interests</div>
     <div class="lang">
       <button id="langEn">EN</button>
       <button id="langHi">HI</button>
@@ -19,18 +19,18 @@
   <main class="container">
     <section class="hero">
       <div>
-        <h1>Daily government job updates, tailored for you</h1>
-        <p class="muted">Choose your state, category, qualification and age. We’ll show only what matches.</p>
+        <h1 data-i18n="heroTitle">Daily government job updates, tailored for you</h1>
+        <p class="muted" data-i18n="heroSubtitle">Choose your state, category, qualification and age. We’ll show only what matches.</p>
         <div class="hero-cta">
-          <a id="tgJoin" class="btn" href="https://t.me/" target="_blank" rel="noopener">Join Telegram Alerts</a>
-          <span class="muted small">Instant alerts on Telegram (free)</span>
+          <a id="tgJoin" class="btn" href="https://t.me/" target="_blank" rel="noopener" data-i18n="tgJoin">Join Telegram Alerts</a>
+          <span class="muted small" data-i18n="tgSub">Instant alerts on Telegram (free)</span>
         </div>
       </div>
       <form id="subscribe" class="subscribe">
         <input type="text" id="name" placeholder="Your name" required />
         <input type="email" id="email" placeholder="Email (for updates)" required />
-        <button type="submit">Notify Me</button>
-        <div class="muted small">WhatsApp alerts will be enabled later.</div>
+        <button type="submit" data-i18n="notify">Notify Me</button>
+        <div class="muted small" data-i18n="waNote">WhatsApp alerts will be enabled later.</div>
       </form>
     </section>
 
@@ -107,13 +107,13 @@
       </div>
     </section>
 
-    <div class="muted small" style="margin-top:8px;">Build v2026.01.30.6 · Note: Some sources don’t provide qualification data, so those items still appear when filtering.</div>
+    <div class="muted small" style="margin-top:8px;">Build v2026.01.30.7 · Note: Some sources don’t provide qualification data, so those items still appear when filtering.</div>
 
     <section class="cta-band">
       <div>
-        <strong data-i18n="upgrade">Get instant alerts</strong> — closing soon, priority exams, and custom filters.
+        <strong data-i18n="upgrade">Get instant alerts</strong> — <span data-i18n="upgradeSub">closing soon, priority exams, and custom filters.</span>
       </div>
-      <button id="upgrade">Upgrade to Premium</button>
+      <button id="upgrade" data-i18n="upgradeBtn">Upgrade to Premium</button>
     </section>
 
     <section class="cards">
@@ -126,36 +126,36 @@
 
     <section class="share">
       <h3 data-i18n="shareTitle">Share with friends</h3>
-      <p class="muted">Help others find jobs faster. Share this site.</p>
+      <p class="muted" data-i18n="shareSub">Help others find jobs faster. Share this site.</p>
       <div class="share-actions">
-        <button id="shareBtn">Share</button>
+        <button id="shareBtn" data-i18n="shareBtn">Share</button>
         <input id="shareLink" readonly value="https://govt-jobs-india.pages.dev" />
-        <button id="copyLink">Copy Link</button>
+        <button id="copyLink" data-i18n="copyLink">Copy Link</button>
       </div>
-      <div class="muted small" style="margin-top:8px;">Refer 5 friends to unlock priority alerts.</div>
+      <div class="muted small" style="margin-top:8px;" data-i18n="refer">Refer 5 friends to unlock priority alerts.</div>
     </section>
 
     <section class="pricing">
-      <h3>Pricing</h3>
+      <h3 data-i18n="pricing">Pricing</h3>
       <div class="price-grid">
         <div class="price-card">
-          <h4>Free</h4>
-          <p class="muted">Daily digest + basic filters</p>
+          <h4 data-i18n="free">Free</h4>
+          <p class="muted" data-i18n="freeSub">Daily digest + basic filters</p>
           <div class="price">₹0</div>
         </div>
         <div class="price-card highlight">
-          <h4>Premium</h4>
-          <p class="muted">Instant alerts, WhatsApp, closing‑soon</p>
+          <h4 data-i18n="premium">Premium</h4>
+          <p class="muted" data-i18n="premiumSub">Instant alerts, WhatsApp, closing‑soon</p>
           <div class="price">₹199/mo</div>
-          <button id="buy">Start Premium</button>
+          <button id="buy" data-i18n="buy">Start Premium</button>
         </div>
       </div>
     </section>
   </main>
 
   <div class="sticky-cta">
-    <a href="https://t.me/" target="_blank" rel="noopener">Join Telegram Alerts</a>
-    <button id="stickyEmail">Get Email Alerts</button>
+    <a href="https://t.me/" target="_blank" rel="noopener" data-i18n="tgJoin">Join Telegram Alerts</a>
+    <button id="stickyEmail" data-i18n="emailAlerts">Get Email Alerts</button>
   </div>
 
   <footer class="footer">

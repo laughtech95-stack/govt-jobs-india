@@ -175,20 +175,63 @@ const copy = (t) => {
 
 const i18n = {
   en: {
-    upgrade: "Upgrade to Premium",
+    tagline: "Find government job notifications based on your interests",
+    heroTitle: "Daily government job updates, tailored for you",
+    heroSubtitle: "Choose your state, category, qualification and age. We’ll show only what matches.",
+    tgJoin: "Join Telegram Alerts",
+    tgSub: "Instant alerts on Telegram (free)",
+    notify: "Notify Me",
+    waNote: "WhatsApp alerts will be enabled later.",
+    upgrade: "Get instant alerts",
+    upgradeSub: "closing soon, priority exams, and custom filters.",
+    upgradeBtn: "Upgrade to Premium",
     shareTitle: "Share with friends",
+    shareSub: "Help others find jobs faster. Share this site.",
+    shareBtn: "Share",
+    copyLink: "Copy Link",
+    refer: "Refer 5 friends to unlock priority alerts.",
+    pricing: "Pricing",
+    free: "Free",
+    freeSub: "Daily digest + basic filters",
+    premium: "Premium",
+    premiumSub: "Instant alerts, WhatsApp, closing‑soon",
+    buy: "Start Premium",
+    emailAlerts: "Get Email Alerts",
   },
   hi: {
-    upgrade: "प्रीमियम में अपग्रेड करें",
+    tagline: "अपनी रुचि के अनुसार सरकारी नौकरी सूचनाएँ पाएँ",
+    heroTitle: "रोज़ाना सरकारी नौकरी अपडेट — आपके लिए",
+    heroSubtitle: "राज्य, श्रेणी, योग्यता और आयु चुनें। हम वही दिखाएँगे जो मेल खाता है।",
+    tgJoin: "टेलीग्राम अलर्ट जॉइन करें",
+    tgSub: "टेलीग्राम पर तुरंत अलर्ट (मुफ़्त)",
+    notify: "मुझे सूचित करें",
+    waNote: "WhatsApp अलर्ट बाद में चालू होंगे।",
+    upgrade: "तुरंत अलर्ट पाएं",
+    upgradeSub: "क्लोज़िंग‑सून, प्रायोरिटी परीक्षाएँ और कस्टम फ़िल्टर।",
+    upgradeBtn: "प्रीमियम में अपग्रेड करें",
     shareTitle: "दोस्तों के साथ साझा करें",
+    shareSub: "दूसरों को नौकरी जल्दी मिले — इस साइट को साझा करें।",
+    shareBtn: "साझा करें",
+    copyLink: "लिंक कॉपी करें",
+    refer: "5 दोस्तों को रेफ़र करें और प्रायोरिटी अलर्ट पाएं।",
+    pricing: "प्राइसिंग",
+    free: "फ्री",
+    freeSub: "डेली डाइजेस्ट + बेसिक फ़िल्टर",
+    premium: "प्रीमियम",
+    premiumSub: "तुरंत अलर्ट, WhatsApp, क्लोज़िंग‑सून",
+    buy: "प्रीमियम शुरू करें",
+    emailAlerts: "ईमेल अलर्ट पाएँ",
   }
 };
 
-els.langEn.addEventListener("click", () => {
-  document.documentElement.lang = "en";
-});
-els.langHi.addEventListener("click", () => {
-  document.documentElement.lang = "hi";
-});
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  copy(i18n[lang]);
+}
+
+els.langEn.addEventListener("click", () => setLang("en"));
+els.langHi.addEventListener("click", () => setLang("hi"));
+
+setLang("en");
 
 loadData();
