@@ -276,4 +276,35 @@ els.langHi.addEventListener("click", () => setLang("hi"));
 
 setLang("en");
 
+function track(type) {
+  const key = `click_${type}`;
+  const count = parseInt(localStorage.getItem(key) || "0", 10) + 1;
+  localStorage.setItem(key, count.toString());
+}
+
+// Track key CTAs on homepage
+const tg = document.getElementById('tgJoin');
+const mock = document.querySelector('.sticky-cta a.btn');
+const wa = document.getElementById('waShare');
+[tg, mock, wa].forEach(el => {
+  if (!el) return;
+  el.addEventListener('click', () => track(el.id || el.textContent.trim()));
+});
+
+const exportBtn = document.getElementById('exportClicks');
+exportBtn.addEventListener('click', () => {
+  const rows = [
+    ['Date','Click Type','Count'],
+    ['today','Telegram', localStorage.getItem('click_tgJoin') || 0],
+    ['today','MockTest', localStorage.getItem('click_Free Mock Test') || 0],
+    ['today','WhatsAppShare', localStorage.getItem('click_waShare') || 0],
+  ];
+  const csv = rows.map(r => r.join(',')).join('\n');
+  const blob = new Blob([csv], {type:'text/csv'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'clicks.csv'; a.click();
+  URL.revokeObjectURL(url);
+});
+
 loadData();
