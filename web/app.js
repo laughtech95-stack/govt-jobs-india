@@ -13,6 +13,13 @@ const els = {
   list: document.getElementById("list"),
   count: document.getElementById("count"),
   subscribe: document.getElementById("subscribe"),
+  shareBtn: document.getElementById("shareBtn"),
+  shareLink: document.getElementById("shareLink"),
+  copyLink: document.getElementById("copyLink"),
+  upgrade: document.getElementById("upgrade"),
+  buy: document.getElementById("buy"),
+  langEn: document.getElementById("langEn"),
+  langHi: document.getElementById("langHi"),
 };
 
 let data = [];
@@ -60,12 +67,24 @@ function sortItems(items) {
   });
 }
 
+function daysLeft(dateStr) {
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return null;
+  const now = new Date();
+  const diff = Math.ceil((d - now) / (1000 * 60 * 60 * 24));
+  return diff;
+}
+
 function render() {
   let items = data.filter(matches);
   items = sortItems(items);
   els.count.textContent = `${items.length} result(s)`;
 
-  els.list.innerHTML = items.map(item => `
+  els.list.innerHTML = items.map(itemRaw => {
+    const item = normalize(itemRaw);
+    const left = daysLeft(item.deadline);
+    const soon = left !== null && left <= 7;
+    return `
     <div class="card">
       <div>
         <h3>${item.title}</h3>
@@ -74,15 +93,16 @@ function render() {
       <div>
         <span class="badge">${item.category}</span>
         <span class="badge">${item.state}</span>
-        <span class="badge">${item.qualification}</span>
+        ${item.qualification ? `<span class=\"badge\">${item.qualification}</span>` : ""}
         <span class="badge">Age ≤ ${item.ageMax}</span>
+        ${soon ? `<span class=\"badge soon\">Closing Soon</span>` : ""}
       </div>
       <div class="meta">Source: ${item.sourceName || "Official"}</div>
       <div class="cta">
         <a href="${item.source}" target="_blank" rel="noopener">Official Link</a>
       </div>
     </div>
-  `).join("");
+  `}).join("");
 
   if (!items.length) {
     els.list.innerHTML = `<div class="muted">No results found. Try adjusting filters.</div>`;
@@ -121,6 +141,49 @@ els.subscribe.addEventListener("submit", async (e) => {
   // Placeholder: store in Supabase later.
   alert("Thanks! We’ll notify you soon.");
   els.subscribe.reset();
+});
+
+els.shareBtn.addEventListener("click", async () => {
+  const url = els.shareLink.value;
+  if (navigator.share) {
+    try { await navigator.share({ title: "Govt Jobs India", url }); } catch {}
+  } else {
+    els.shareLink.select();
+  }
+});
+
+els.copyLink.addEventListener("click", async () => {
+  const url = els.shareLink.value;
+  await navigator.clipboard.writeText(url);
+  alert("Link copied");
+});
+
+els.upgrade.addEventListener("click", () => alert("Premium coming soon"));
+els.buy.addEventListener("click", () => alert("Premium coming soon"));
+
+const copy = (t) => {
+  document.querySelectorAll('[data-i18n]')?.forEach(el => {
+    const k = el.getAttribute('data-i18n');
+    if (t[k]) el.textContent = t[k];
+  });
+};
+
+const i18n = {
+  en: {
+    upgrade: "Upgrade to Premium",
+    shareTitle: "Share with friends",
+  },
+  hi: {
+    upgrade: "प्रीमियम में अपग्रेड करें",
+    shareTitle: "दोस्तों के साथ साझा करें",
+  }
+};
+
+els.langEn.addEventListener("click", () => {
+  document.documentElement.lang = "en";
+});
+els.langHi.addEventListener("click", () => {
+  document.documentElement.lang = "hi";
 });
 
 loadData();

@@ -17,9 +17,12 @@ body {
   padding: 24px 20px;
   border-bottom: 1px solid var(--border);
   background: #0b1324;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
 }
 .brand { font-size: 22px; font-weight: 700; }
-.tagline { color: var(--muted); margin-top: 4px; }
+.tagline { color: var(--muted); margin-top: 4px; flex:1; }
+.lang { display:flex; gap:6px; }
+.lang button { padding:6px 10px; border-radius:8px; border:1px solid var(--border); background:#111c36; color:var(--text); cursor:pointer; }
 .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
 .hero { display:flex; gap: 24px; flex-wrap: wrap; align-items:center; margin-bottom: 18px; }
 .hero h1 { margin: 0 0 8px; font-size: clamp(22px, 3vw, 32px); }
@@ -65,6 +68,8 @@ body {
   color: var(--text);
   cursor: pointer;
 }
+.cta-band { margin-top:14px; display:flex; justify-content:space-between; align-items:center; gap:10px; padding:12px 14px; border:1px solid var(--border); background:#0b223d; border-radius:12px; }
+.cta-band button { padding:8px 12px; border-radius:10px; border:1px solid var(--border); background:var(--accent); color:#0b1222; font-weight:700; cursor:pointer; }
 .cards { margin-top: 18px; }
 .cards-header { display:flex; justify-content: space-between; align-items:center; }
 .card-list { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 12px; }
@@ -78,6 +83,7 @@ body {
 .card h3 { margin: 0; font-size: 16px; }
 .card .meta { color: var(--muted); font-size: 12px; }
 .badge { display:inline-block; padding: 4px 8px; border-radius: 999px; background:#0b223d; color:#7dd3fc; font-size: 11px; margin-right: 6px; }
+.badge.soon { background:#3b1d1d; color:#fca5a5; }
 .cta { margin-top: auto; display:flex; gap: 10px; }
 .cta a {
   text-decoration: none;
@@ -88,6 +94,15 @@ body {
   font-weight: 600;
   text-align:center;
 }
+.share, .pricing { margin-top: 24px; border:1px solid var(--border); padding:14px; border-radius:12px; background: var(--card); }
+.share-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.share-actions input { flex:1; min-width:240px; padding:10px; border-radius:10px; border:1px solid var(--border); background:#0f1b34; color:var(--text); }
+.share-actions button { padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:#111c36; color:var(--text); cursor:pointer; }
+.price-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:12px; }
+.price-card { border:1px solid var(--border); padding:12px; border-radius:12px; background:#0f1b34; }
+.price-card.highlight { border-color:#38bdf8; box-shadow:0 0 0 1px #38bdf8 inset; }
+.price { font-size:20px; font-weight:700; margin-top:6px; }
+.price-card button { margin-top:8px; padding:8px 10px; border-radius:10px; border:1px solid var(--border); background:var(--accent); color:#0b1222; font-weight:700; }
 .muted { color: var(--muted); }
 .footer { padding: 18px; text-align:center; color: var(--muted); border-top:1px solid var(--border); margin-top: 30px; }
 

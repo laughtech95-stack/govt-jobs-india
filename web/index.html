@@ -10,6 +10,10 @@
   <header class="topbar">
     <div class="brand">🇮🇳 Govt Jobs India</div>
     <div class="tagline">Find government job notifications based on your interests</div>
+    <div class="lang">
+      <button id="langEn">EN</button>
+      <button id="langHi">HI</button>
+    </div>
   </header>
 
   <main class="container">
@@ -99,7 +103,14 @@
       </div>
     </section>
 
-    <div class="muted small" style="margin-top:8px;">Build v2026.01.30.4 · Note: Some sources don’t provide qualification data, so those items still appear when filtering.</div>
+    <div class="muted small" style="margin-top:8px;">Build v2026.01.30.5 · Note: Some sources don’t provide qualification data, so those items still appear when filtering.</div>
+
+    <section class="cta-band">
+      <div>
+        <strong data-i18n="upgrade">Get instant alerts</strong> — closing soon, priority exams, and custom filters.
+      </div>
+      <button id="upgrade">Upgrade to Premium</button>
+    </section>
 
     <section class="cards">
       <div class="cards-header">
@@ -107,6 +118,33 @@
         <div id="count" class="muted"></div>
       </div>
       <div id="list" class="card-list"></div>
+    </section>
+
+    <section class="share">
+      <h3 data-i18n="shareTitle">Share with friends</h3>
+      <p class="muted">Help others find jobs faster. Share this site.</p>
+      <div class="share-actions">
+        <button id="shareBtn">Share</button>
+        <input id="shareLink" readonly value="https://govt-jobs-india.pages.dev" />
+        <button id="copyLink">Copy Link</button>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <h3>Pricing</h3>
+      <div class="price-grid">
+        <div class="price-card">
+          <h4>Free</h4>
+          <p class="muted">Daily digest + basic filters</p>
+          <div class="price">₹0</div>
+        </div>
+        <div class="price-card highlight">
+          <h4>Premium</h4>
+          <p class="muted">Instant alerts, WhatsApp, closing‑soon</p>
+          <div class="price">₹199/mo</div>
+          <button id="buy">Start Premium</button>
+        </div>
+      </div>
     </section>
   </main>
 
