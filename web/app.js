@@ -8,6 +8,7 @@ const els = {
   qualification: document.getElementById("qualification"),
   age: document.getElementById("age"),
   sort: document.getElementById("sort"),
+  apply: document.getElementById("apply"),
   reset: document.getElementById("reset"),
   list: document.getElementById("list"),
   count: document.getElementById("count"),
@@ -95,6 +96,7 @@ async function loadData() {
 });
 
 els.searchBtn.addEventListener("click", render);
+els.apply.addEventListener("click", render);
 
 els.reset.addEventListener("click", () => {
   els.q.value = "";
