@@ -155,14 +155,19 @@ function render() {
 
 let loadError = null;
 async function loadData() {
+  const dbg = document.getElementById('debug');
+  if (dbg) dbg.textContent = `Debug: loading ${DEMO_FALLBACK_URL}`;
   try {
     const res = await fetch(DEMO_FALLBACK_URL, {cache: 'no-cache'});
+    if (dbg) dbg.textContent = `Debug: fetch status ${res.status}`;
     if (!res.ok) throw new Error('Fetch failed');
     const json = await res.json();
     data = Array.isArray(json) ? json : [];
+    if (dbg) dbg.textContent = `Debug: loaded ${data.length} items`;
   } catch (e) {
     data = [];
     loadError = e;
+    if (dbg) dbg.textContent = `Debug: fetch failed (${e.message})`;
   }
   render();
 }
