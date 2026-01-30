@@ -149,8 +149,14 @@ function render() {
 }
 
 async function loadData() {
-  const res = await fetch(DEMO_FALLBACK_URL);
-  data = await res.json();
+  try {
+    const res = await fetch(DEMO_FALLBACK_URL, {cache: 'no-cache'});
+    if (!res.ok) throw new Error('Fetch failed');
+    const json = await res.json();
+    data = Array.isArray(json) ? json : [];
+  } catch (e) {
+    data = [];
+  }
   render();
 }
 
