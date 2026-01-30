@@ -135,7 +135,7 @@
       </div>
     </section>
 
-    <div class="muted small" style="margin-top:8px;">Build v2026.01.30.29 · Note: Some sources don’t provide qualification data, so those items still appear when filtering.</div>
+    <div class="muted small" style="margin-top:8px;">Build v2026.01.30.30 · Note: Some sources don’t provide qualification data, so those items still appear when filtering.</div>
 
     <section class="cta-band">
       <div>
@@ -195,7 +195,23 @@
   </footer>
 
   <script>
-    document.getElementById('debug').textContent = 'Debug: inline script ran';
+    const dbg = document.getElementById('debug');
+    dbg.textContent = 'Debug: inline script ran';
+    (async () => {
+      try {
+        const res = await fetch(window.location.origin + '/jobs.json');
+        const items = await res.json();
+        const list = document.getElementById('list');
+        if (Array.isArray(items) && items.length) {
+          list.innerHTML = items.map(i => `<div class="card"><h3>${i.title}</h3><div class="meta">Source: ${i.sourceName||'Official'}</div></div>`).join('');
+          dbg.textContent = `Debug: inline loaded ${items.length} items`;
+        } else {
+          dbg.textContent = 'Debug: inline loaded 0 items';
+        }
+      } catch (e) {
+        dbg.textContent = 'Debug: inline fetch failed';
+      }
+    })();
   </script>
   <script src="app.js"></script>
 </body>
