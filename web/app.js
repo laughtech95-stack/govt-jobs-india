@@ -80,6 +80,8 @@ function render() {
   let items = data.filter(matches);
   items = sortItems(items);
   els.count.textContent = `${items.length} result(s)`;
+  const dbg = document.getElementById('debug');
+  if (dbg) dbg.textContent = `Debug: items=${items.length} total=${data.length}`;
 
   const related = items.slice(0, 4).map(i => `<a href="/pages/${(i.category||'other').toLowerCase().replace(/\s+/g,'-')}-jobs.html">${i.category||'Other'} jobs</a>`).join(" · ");
 
