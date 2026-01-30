@@ -16,6 +16,8 @@ jobs:
         env:
           DATA_GOV_API_KEY: ${{ secrets.DATA_GOV_API_KEY }}
       - name: Commit updates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "govt-jobs-bot"
           git config user.email "bot@example.com"
