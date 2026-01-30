@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "SSC CGL 2026",
+    "category": "SSC",
+    "state": "All India",
+    "qualification": "Graduate",
+    "ageMax": 30,
+    "posted": "2026-01-20",
+    "deadline": "2026-02-25",
+    "source": "https://ssc.nic.in/",
+    "sourceName": "SSC",
+    "tags": ["Tier-1", "General"]
+  },
+  {
+    "id": 2,
+    "title": "RRB Technician",
+    "category": "Railways",
+    "state": "All India",
+    "qualification": "Diploma",
+    "ageMax": 33,
+    "posted": "2026-01-18",
+    "deadline": "2026-03-01",
+    "source": "https://www.rrbcdg.gov.in/",
+    "sourceName": "RRB",
+    "tags": ["Technical"]
+  },
+  {
+    "id": 3,
+    "title": "IBPS PO 2026",
+    "category": "Banking",
+    "state": "All India",
+    "qualification": "Graduate",
+    "ageMax": 30,
+    "posted": "2026-01-15",
+    "deadline": "2026-02-20",
+    "source": "https://www.ibps.in/",
+    "sourceName": "IBPS",
+    "tags": ["Bank", "PO"]
+  }
+]

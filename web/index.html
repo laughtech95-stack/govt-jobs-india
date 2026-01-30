@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Govt Jobs India — Alerts by Interest</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🇮🇳 Govt Jobs India</div>
+    <div class="tagline">Find government job notifications based on your interests</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Daily government job updates, tailored for you</h1>
+        <p class="muted">Choose your state, category, qualification and age. We’ll show only what matches.</p>
+      </div>
+      <form id="subscribe" class="subscribe">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="email" id="email" placeholder="Email (for updates)" required />
+        <button type="submit">Notify Me</button>
+        <div class="muted small">WhatsApp alerts will be enabled later.</div>
+      </form>
+    </section>
+
+    <section class="filters">
+      <div class="filter-group">
+        <label>Search</label>
+        <input id="q" type="search" placeholder="e.g., SSC, Railway, Engineer, Delhi" />
+      </div>
+      <div class="filter-group">
+        <label>Category</label>
+        <select id="category">
+          <option value="">All</option>
+          <option>SSC</option>
+          <option>Railways</option>
+          <option>Banking</option>
+          <option>Teaching</option>
+          <option>Defence</option>
+          <option>State PSC</option>
+          <option>UPSC</option>
+          <option>Engineering</option>
+          <option>Healthcare</option>
+          <option>Police</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>State</label>
+        <select id="state">
+          <option value="">All</option>
+          <option>All India</option>
+          <option>Andhra Pradesh</option>
+          <option>Bihar</option>
+          <option>Delhi</option>
+          <option>Gujarat</option>
+          <option>Karnataka</option>
+          <option>Maharashtra</option>
+          <option>Tamil Nadu</option>
+          <option>Telangana</option>
+          <option>Uttar Pradesh</option>
+          <option>West Bengal</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Qualification</label>
+        <select id="qualification">
+          <option value="">All</option>
+          <option>10th</option>
+          <option>12th</option>
+          <option>Diploma</option>
+          <option>Graduate</option>
+          <option>Post Graduate</option>
+          <option>Engineering</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Age max</label>
+        <input id="age" type="number" min="18" max="60" placeholder="e.g., 30" />
+      </div>
+      <div class="filter-group">
+        <label>Sort by</label>
+        <select id="sort">
+          <option value="deadline">Deadline (soonest)</option>
+          <option value="posted">Posted (newest)</option>
+        </select>
+      </div>
+      <div class="filter-actions">
+        <button id="reset" type="button">Reset</button>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="cards-header">
+        <h2>Open Notifications</h2>
+        <div id="count" class="muted"></div>
+      </div>
+      <div id="list" class="card-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>⚠️ Data shown may include demo items while sources are connected.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
