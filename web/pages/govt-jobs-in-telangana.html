@@ -29,5 +29,10 @@
     <a href="https://t.me/+twculeB9tEo3ZGRl?utm_source=govtjobs&utm_medium=cta&utm_campaign=telegram" target="_blank" rel="noopener">Join Telegram Alerts</a>
     <a href="/pages/free-mock-test.html" class="btn">Free Mock Test</a>
   </div>
+
+<script>
+function track(type){const key='click_'+type;const c=parseInt(localStorage.getItem(key)||'0',10)+1;localStorage.setItem(key,c.toString());}
+document.querySelectorAll('a').forEach(a=>{if(a.href.includes('t.me')) a.addEventListener('click',()=>track('Telegram')); if(a.href.includes('amazon.in')||a.href.includes('flipkart.com')) a.addEventListener('click',()=>track('Affiliate'));});
+</script>
 </body>
 </html>
