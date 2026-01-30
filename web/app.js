@@ -245,13 +245,16 @@ if (els.copyLink) {
 const waText = encodeURIComponent("Latest Govt Jobs in India — updated daily. Join for alerts: " + els.shareLink.value);
 els.waShare.href = `https://wa.me/?text=${waText}`;
 
-els.upgrade.addEventListener("click", () => alert("Premium coming soon"));
-els.buy.addEventListener("click", () => alert("Premium coming soon"));
+if (els.upgrade) els.upgrade.addEventListener("click", () => alert("Premium coming soon"));
+if (els.buy) els.buy.addEventListener("click", () => alert("Premium coming soon"));
 
 const stickyEmail = document.getElementById("stickyEmail");
-stickyEmail.addEventListener("click", () => {
-  document.getElementById("email").focus();
-});
+if (stickyEmail) {
+  stickyEmail.addEventListener("click", () => {
+    const email = document.getElementById("email");
+    if (email) email.focus();
+  });
+}
 
 const copy = (t) => {
   document.querySelectorAll('[data-i18n]')?.forEach(el => {
@@ -316,8 +319,8 @@ function setLang(lang) {
   copy(i18n[lang]);
 }
 
-els.langEn.addEventListener("click", () => setLang("en"));
-els.langHi.addEventListener("click", () => setLang("hi"));
+if (els.langEn) els.langEn.addEventListener("click", () => setLang("en"));
+if (els.langHi) els.langHi.addEventListener("click", () => setLang("hi"));
 
 setLang("en");
 
