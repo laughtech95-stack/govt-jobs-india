@@ -14,6 +14,9 @@ body {
   background: radial-gradient(1200px 600px at 20% -10%, #0f1b34, var(--bg));
   color: var(--text);
 }
+
+a { color:#93c5fd; text-decoration:none; }
+a:hover { text-decoration: underline; }
 .topbar {
   padding: 24px 20px;
   border-bottom: 1px solid var(--border);
