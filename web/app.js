@@ -108,6 +108,41 @@ function render() {
     </div>
   `}).join("");
 
+  // Inject JobPosting schema for top items
+  const top = items.slice(0, 5).map(r => {
+    const item = normalize(r);
+    return {
+      "@type": "JobPosting",
+      "title": item.title,
+      "datePosted": item.posted,
+      "validThrough": item.deadline,
+      "employmentType": "FULL_TIME",
+      "hiringOrganization": {
+        "@type": "Organization",
+        "name": item.sourceName || "Government"
+      },
+      "jobLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": item.state || "All India",
+          "addressCountry": "IN"
+        }
+      },
+      "applicationContact": {"@type": "ContactPoint", "url": item.source},
+      "url": item.source
+    };
+  });
+
+  let schema = document.getElementById('jobposting-schema');
+  if (!schema) {
+    schema = document.createElement('script');
+    schema.type = 'application/ld+json';
+    schema.id = 'jobposting-schema';
+    document.head.appendChild(schema);
+  }
+  schema.textContent = JSON.stringify({"@context":"https://schema.org","@graph": top});
+
   if (!items.length) {
     els.list.innerHTML = `<div class="muted">No results found. Try adjusting filters.</div>`;
   }
