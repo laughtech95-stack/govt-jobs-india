@@ -22,17 +22,17 @@ body {
 .tagline { color: var(--muted); margin-top: 4px; }
 .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
 .hero { display:flex; gap: 24px; flex-wrap: wrap; align-items:center; margin-bottom: 18px; }
-.hero h1 { margin: 0 0 8px; }
-.subscribe { display:flex; gap: 8px; flex-wrap: wrap; background: var(--card); border:1px solid var(--border); padding:12px; border-radius:12px; }
-.subscribe input { padding:10px; border-radius:10px; border:1px solid var(--border); background:#0f1b34; color:var(--text); min-width:200px; }
+.hero h1 { margin: 0 0 8px; font-size: clamp(22px, 3vw, 32px); }
+.subscribe { display:flex; gap: 8px; flex-wrap: wrap; background: var(--card); border:1px solid var(--border); padding:12px; border-radius:12px; width: 100%; }
+.subscribe input { flex:1 1 220px; padding:10px; border-radius:10px; border:1px solid var(--border); background:#0f1b34; color:var(--text); }
 .subscribe button { padding:10px 14px; border-radius:10px; border:1px solid var(--border); background: var(--accent); color:#0b1222; font-weight:700; cursor:pointer; }
 .small { font-size: 12px; }
 .filters {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
   border: 1px solid var(--border);
-  padding: 16px;
+  padding: 14px;
   border-radius: 12px;
   background: var(--card);
 }
@@ -56,7 +56,7 @@ body {
 }
 .cards { margin-top: 18px; }
 .cards-header { display:flex; justify-content: space-between; align-items:center; }
-.card-list { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 12px; }
+.card-list { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 12px; }
 .card {
   border: 1px solid var(--border);
   background: var(--card);
@@ -79,3 +79,16 @@ body {
 }
 .muted { color: var(--muted); }
 .footer { padding: 18px; text-align:center; color: var(--muted); border-top:1px solid var(--border); margin-top: 30px; }
+
+@media (max-width: 640px) {
+  .topbar { padding: 18px 16px; }
+  .container { padding: 16px; }
+  .filters { grid-template-columns: 1fr 1fr; }
+  .card-list { grid-template-columns: 1fr; }
+  .subscribe { gap: 10px; }
+  .subscribe button { width: 100%; }
+}
+
+@media (max-width: 420px) {
+  .filters { grid-template-columns: 1fr; }
+}
