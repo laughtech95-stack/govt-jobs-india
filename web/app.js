@@ -14,6 +14,7 @@ const els = {
   count: document.getElementById("count"),
   subscribe: document.getElementById("subscribe"),
   shareBtn: document.getElementById("shareBtn"),
+  waShare: document.getElementById("waShare"),
   shareLink: document.getElementById("shareLink"),
   copyLink: document.getElementById("copyLink"),
   upgrade: document.getElementById("upgrade"),
@@ -160,6 +161,9 @@ els.copyLink.addEventListener("click", async () => {
   await navigator.clipboard.writeText(url);
   alert("Link copied");
 });
+
+const waText = encodeURIComponent("Latest Govt Jobs in India — updated daily. Join for alerts: " + els.shareLink.value);
+els.waShare.href = `https://wa.me/?text=${waText}`;
 
 els.upgrade.addEventListener("click", () => alert("Premium coming soon"));
 els.buy.addEventListener("click", () => alert("Premium coming soon"));
