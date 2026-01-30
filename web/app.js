@@ -161,6 +161,11 @@ els.copyLink.addEventListener("click", async () => {
 els.upgrade.addEventListener("click", () => alert("Premium coming soon"));
 els.buy.addEventListener("click", () => alert("Premium coming soon"));
 
+const stickyEmail = document.getElementById("stickyEmail");
+stickyEmail.addEventListener("click", () => {
+  document.getElementById("email").focus();
+});
+
 const copy = (t) => {
   document.querySelectorAll('[data-i18n]')?.forEach(el => {
     const k = el.getAttribute('data-i18n');
