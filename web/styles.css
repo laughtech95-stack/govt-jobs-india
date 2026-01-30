@@ -1,16 +1,17 @@
 :root {
-  --bg: #0f172a;
-  --card: #0b1222;
+  --bg: #0b1220;
+  --card: #0f1a2d;
   --muted: #94a3b8;
   --text: #e2e8f0;
   --accent: #38bdf8;
+  --accent2: #22c55e;
   --border: #1e293b;
 }
 * { box-sizing: border-box; }
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
-  background: var(--bg);
+  background: radial-gradient(1200px 600px at 20% -10%, #0f1b34, var(--bg));
   color: var(--text);
 }
 .topbar {
@@ -27,7 +28,7 @@ body {
 .hero { display:flex; gap: 24px; flex-wrap: wrap; align-items:center; margin-bottom: 18px; }
 .hero h1 { margin: 0 0 8px; font-size: clamp(22px, 3vw, 32px); }
 .hero-cta { display:flex; gap:10px; align-items:center; margin-top:10px; flex-wrap:wrap; }
-.btn { display:inline-block; padding:10px 14px; border-radius:10px; background: var(--accent); color:#0b1222; font-weight:700; text-decoration:none; }
+.btn { display:inline-block; padding:10px 14px; border-radius:10px; background: linear-gradient(135deg, var(--accent), #60a5fa); color:#0b1222; font-weight:700; text-decoration:none; }
 .subscribe { display:flex; gap: 8px; flex-wrap: wrap; background: var(--card); border:1px solid var(--border); padding:12px; border-radius:12px; width: 100%; }
 .subscribe input { flex:1 1 220px; padding:10px; border-radius:10px; border:1px solid var(--border); background:#0f1b34; color:var(--text); }
 .subscribe button { padding:10px 14px; border-radius:10px; border:1px solid var(--border); background: var(--accent); color:#0b1222; font-weight:700; cursor:pointer; }
@@ -77,10 +78,11 @@ body {
 .card-list { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 12px; }
 .card {
   border: 1px solid var(--border);
-  background: var(--card);
+  background: linear-gradient(180deg, #0f1b34, var(--card));
   border-radius: 14px;
   padding: 14px;
   display:flex; flex-direction: column; gap: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 .card h3 { margin: 0; font-size: 16px; }
 .card .meta { color: var(--muted); font-size: 12px; }
