@@ -1,41 +1,797 @@
 [
   {
-    "id": 1,
-    "title": "SSC CGL 2026",
-    "category": "SSC",
+    "id": "6660e2db-2606-4e24-a62c-e3e53a42ce3a:0.8964547027378138",
+    "title": "Year-wise Recruitment made by UPSC, SSC and RRBs (2016-17 to 2020-21)",
+    "category": "UPSC/SSC/RRB",
     "state": "All India",
-    "qualification": "Graduate",
-    "ageMax": 30,
-    "posted": "2026-01-20",
-    "deadline": "2026-02-25",
-    "source": "https://ssc.nic.in/",
-    "sourceName": "SSC",
-    "tags": ["Tier-1", "General"]
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-recruitment-made-upsc-ssc-and-rrbs-2016-17-2020-21",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
   },
   {
-    "id": 2,
-    "title": "RRB Technician",
+    "id": "6660e2db-2606-4e24-a62c-e3e53a42ce3a:0.6521286185004938",
+    "title": "Year-wise Recruitment made by UPSC, SSC and RRBs (2016-17 to 2020-21)",
+    "category": "UPSC/SSC/RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-recruitment-made-upsc-ssc-and-rrbs-2016-17-2020-21",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "6660e2db-2606-4e24-a62c-e3e53a42ce3a:0.07488004148149097",
+    "title": "Year-wise Recruitment made by UPSC, SSC and RRBs (2016-17 to 2020-21)",
+    "category": "UPSC/SSC/RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-recruitment-made-upsc-ssc-and-rrbs-2016-17-2020-21",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "6660e2db-2606-4e24-a62c-e3e53a42ce3a:0.765541370085757",
+    "title": "Year-wise Recruitment made by UPSC, SSC and RRBs (2016-17 to 2020-21)",
+    "category": "UPSC/SSC/RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-recruitment-made-upsc-ssc-and-rrbs-2016-17-2020-21",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "6660e2db-2606-4e24-a62c-e3e53a42ce3a:0.8255480544296749",
+    "title": "Year-wise Recruitment made by UPSC, SSC and RRBs (2016-17 to 2020-21)",
+    "category": "UPSC/SSC/RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-recruitment-made-upsc-ssc-and-rrbs-2016-17-2020-21",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "6660e2db-2606-4e24-a62c-e3e53a42ce3a:0.6152473153439044",
+    "title": "Year-wise Recruitment made by UPSC, SSC and RRBs (2016-17 to 2020-21)",
+    "category": "UPSC/SSC/RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-recruitment-made-upsc-ssc-and-rrbs-2016-17-2020-21",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "a0e455fc-2c82-4ccd-8bd6-14f8fd490b02:0.06249621564371077",
+    "title": "Recruitment in Indian Railway Health Service (Gazetted) 2017-2021",
     "category": "Railways",
     "state": "All India",
-    "qualification": "Diploma",
-    "ageMax": 33,
-    "posted": "2026-01-18",
-    "deadline": "2026-03-01",
-    "source": "https://www.rrbcdg.gov.in/",
-    "sourceName": "RRB",
-    "tags": ["Technical"]
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-details-recruitment-indian-railway-health-service-gazetted-2017-2021",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
   },
   {
-    "id": 3,
-    "title": "IBPS PO 2026",
-    "category": "Banking",
+    "id": "a0e455fc-2c82-4ccd-8bd6-14f8fd490b02:0.8889834219211981",
+    "title": "Recruitment in Indian Railway Health Service (Gazetted) 2017-2021",
+    "category": "Railways",
     "state": "All India",
-    "qualification": "Graduate",
-    "ageMax": 30,
-    "posted": "2026-01-15",
-    "deadline": "2026-02-20",
-    "source": "https://www.ibps.in/",
-    "sourceName": "IBPS",
-    "tags": ["Bank", "PO"]
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-details-recruitment-indian-railway-health-service-gazetted-2017-2021",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "a0e455fc-2c82-4ccd-8bd6-14f8fd490b02:0.6864824610939657",
+    "title": "Recruitment in Indian Railway Health Service (Gazetted) 2017-2021",
+    "category": "Railways",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-details-recruitment-indian-railway-health-service-gazetted-2017-2021",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "a0e455fc-2c82-4ccd-8bd6-14f8fd490b02:0.3624547798550173",
+    "title": "Recruitment in Indian Railway Health Service (Gazetted) 2017-2021",
+    "category": "Railways",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-details-recruitment-indian-railway-health-service-gazetted-2017-2021",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "a0e455fc-2c82-4ccd-8bd6-14f8fd490b02:0.21939096384266032",
+    "title": "Recruitment in Indian Railway Health Service (Gazetted) 2017-2021",
+    "category": "Railways",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-details-recruitment-indian-railway-health-service-gazetted-2017-2021",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "a0e455fc-2c82-4ccd-8bd6-14f8fd490b02:0.9801046392163282",
+    "title": "Recruitment in Indian Railway Health Service (Gazetted) 2017-2021",
+    "category": "Railways",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-details-recruitment-indian-railway-health-service-gazetted-2017-2021",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "a0e455fc-2c82-4ccd-8bd6-14f8fd490b02:0.5983277987365998",
+    "title": "Recruitment in Indian Railway Health Service (Gazetted) 2017-2021",
+    "category": "Railways",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/year-wise-details-recruitment-indian-railway-health-service-gazetted-2017-2021",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "7bdf8963-b10e-4cb7-b943-ec9dbb93a712:0.270622509771016",
+    "title": "CEN-wise Recruitment Process against RRB CEN Vacancies",
+    "category": "Railways",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/cen-wise-recruitment-process-against-three-centralized-employment-notifications",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "7bdf8963-b10e-4cb7-b943-ec9dbb93a712:0.5954777319472151",
+    "title": "CEN-wise Recruitment Process against RRB CEN Vacancies",
+    "category": "Railways",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/cen-wise-recruitment-process-against-three-centralized-employment-notifications",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "7bdf8963-b10e-4cb7-b943-ec9dbb93a712:0.41863151924507536",
+    "title": "CEN-wise Recruitment Process against RRB CEN Vacancies",
+    "category": "Railways",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.data.gov.in/resource/cen-wise-recruitment-process-against-three-centralized-employment-notifications",
+    "sourceName": "data.gov.in",
+    "tags": [
+      "data.gov.in"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/1181/91195/login.html",
+    "title": "CEN 01/2024 - (ALP)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/1181/91195/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/2667/92088/login.html",
+    "title": "CEN 02/2024 - (Technician-I)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/2667/92088/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/2667/92089/login.html",
+    "title": "CEN 02/2024 - (Technician-III)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/2667/92089/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/1907/91775/login.html",
+    "title": "CEN 03/2024 - (JE/DMS/CMA)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/1907/91775/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com//EForms/configuredHtml/33015/93368/login.html",
+    "title": "CEN 04/2024 - (Paramedical)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com//EForms/configuredHtml/33015/93368/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com//EForms/configuredHtml/33015/94346/login.html",
+    "title": "CEN 05/2024 - (NTPC-G)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com//EForms/configuredHtml/33015/94346/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/2667/95125/login.html",
+    "title": "CEN 06/2024 - (NTPC-UG)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/2667/95125/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/33015/95530/login.html",
+    "title": "CEN 07/2024 - (M&I)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/33015/95530/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/33015/96410/login.html",
+    "title": "CEN 08/2024 - (Level-1)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/33015/96410/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/1181/91610/login.html",
+    "title": "CEN RPF 01/2024 - (SI)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/1181/91610/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/33015/92912/login.html",
+    "title": "CEN RPF 02/2024 - (Constable)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/33015/92912/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/1181/91195/login.html",
+    "title": "CEN 01/2024 - (ALP)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/1181/91195/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/2667/92088/login.html",
+    "title": "CEN 02/2024 - (Technician-I)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/2667/92088/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/2667/92089/login.html",
+    "title": "CEN 02/2024 - (Technician-III)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/2667/92089/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/1907/91775/login.html",
+    "title": "CEN 03/2024 - (JE/DMS/CMA)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/1907/91775/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com//EForms/configuredHtml/33015/93368/login.html",
+    "title": "CEN 04/2024 - (Paramedical)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com//EForms/configuredHtml/33015/93368/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com//EForms/configuredHtml/33015/94346/login.html",
+    "title": "CEN 05/2024 - (NTPC-G)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com//EForms/configuredHtml/33015/94346/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/2667/95125/login.html",
+    "title": "CEN 06/2024 - (NTPC-UG)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/2667/95125/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/33015/95530/login.html",
+    "title": "CEN 07/2024 - (M&I)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/33015/95530/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/33015/96410/login.html",
+    "title": "CEN 08/2024 - (Level-1)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/33015/96410/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/1181/91610/login.html",
+    "title": "CEN RPF 01/2024 - (SI)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/1181/91610/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://rrb.digialm.com/EForms/configuredHtml/33015/92912/login.html",
+    "title": "CEN RPF 02/2024 - (Constable)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://rrb.digialm.com/EForms/configuredHtml/33015/92912/login.html",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://www4.digialm.com//OnlineAssessment/index.html?1181@@M11",
+    "title": "CEN 01/2024 - (ALP) CBT-I",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www4.digialm.com//OnlineAssessment/index.html?1181@@M11",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://www4.digialm.com/OnlineAssessment/index.html?1181@@M17",
+    "title": "CEN 01/2024 - (ALP) CBT-II",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www4.digialm.com/OnlineAssessment/index.html?1181@@M17",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://dc4-g22.digialm.com/OnlineAssessment/index.html?32341@@M2",
+    "title": "CEN 02/2024 - (Technicians)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://dc4-g22.digialm.com/OnlineAssessment/index.html?32341@@M2",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://dc4-g22.digialm.com//OnlineAssessment/index.html?1907@@M9",
+    "title": "CEN 03/2024 - (JE/DMS/CMA)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://dc4-g22.digialm.com//OnlineAssessment/index.html?1907@@M9",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://dc4-g22.digialm.com//OnlineAssessment/index.html?33015@@M216",
+    "title": "CEN 04/2024 - (Paramedical)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://dc4-g22.digialm.com//OnlineAssessment/index.html?33015@@M216",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://dc4-g22.digialm.com//OnlineAssessment/index.html?33015@@M217",
+    "title": "CEN 05/2024 - NTPC Graduate",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://dc4-g22.digialm.com//OnlineAssessment/index.html?33015@@M217",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://dc4-g22.digialm.com/OnlineAssessment/index.html?2667@@M8",
+    "title": "CEN 06/2024 - NTPC UG",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://dc4-g22.digialm.com/OnlineAssessment/index.html?2667@@M8",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://cdn4.digialm.com/OnlineAssessment/index.html?33015@@MOA1@@0@@0",
+    "title": "CEN 08/2024 - Group-D (Level-1)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://cdn4.digialm.com/OnlineAssessment/index.html?33015@@MOA1@@0@@0",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://www4.digialm.com/OnlineAssessment/index.html?1181@@M12",
+    "title": "CEN RPF 01/2024 - (SI)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www4.digialm.com/OnlineAssessment/index.html?1181@@M12",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://dc4-g22.digialm.com//OnlineAssessment/index.html?33015@@M214",
+    "title": "CEN RPF 02/2024 - (Constable)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://dc4-g22.digialm.com//OnlineAssessment/index.html?33015@@M214",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://www4.digialm.com//OnlineAssessment/index.html?1181@@M11",
+    "title": "Click here for Mock Test of CEN-01/2024 (ALP)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www4.digialm.com//OnlineAssessment/index.html?1181@@M11",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://www4.digialm.com/OnlineAssessment/index.html?1181@@M12",
+    "title": "Click here for Mock Test of CEN-RPF 01/2024 (SI)",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www4.digialm.com/OnlineAssessment/index.html?1181@@M12",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://www.rrbcdg.gov.in/2019/02-PMED/02-2019%20AP4.pdf",
+    "title": "Additional Panel-4 for paramedical posts of CEN-02/2019",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.rrbcdg.gov.in/2019/02-PMED/02-2019%20AP4.pdf",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:https://www.rrbcdg.gov.in/",
+    "title": "Railway Recruitment Board, Chandigarh",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "https://www.rrbcdg.gov.in/",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
+  },
+  {
+    "id": "RRB:http://www.nic.in/",
+    "title": "National Informatics Centre",
+    "category": "RRB",
+    "state": "All India",
+    "qualification": "",
+    "ageMax": 60,
+    "posted": "2026-01-30",
+    "deadline": "2026-01-30",
+    "source": "http://www.nic.in/",
+    "sourceName": "RRB",
+    "tags": [
+      "scraped"
+    ]
   }
 ]
