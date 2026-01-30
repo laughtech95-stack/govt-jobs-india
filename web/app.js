@@ -191,47 +191,56 @@ async function loadData() {
 }
 
 [els.q, els.category, els.state, els.qualification, els.age, els.sort].forEach(el => {
+  if (!el) return;
   el.addEventListener("input", render);
   el.addEventListener("change", render);
 });
 
-els.searchBtn.addEventListener("click", render);
-els.apply.addEventListener("click", render);
+if (els.searchBtn) els.searchBtn.addEventListener("click", render);
+if (els.apply) els.apply.addEventListener("click", render);
 
-els.reset.addEventListener("click", () => {
-  els.q.value = "";
-  els.category.value = "";
-  els.state.value = "";
-  els.qualification.value = "";
-  els.age.value = "";
-  els.sort.value = "deadline";
-  render();
-});
+if (els.reset) {
+  els.reset.addEventListener("click", () => {
+    if (els.q) els.q.value = "";
+    if (els.category) els.category.value = "";
+    if (els.state) els.state.value = "";
+    if (els.qualification) els.qualification.value = "";
+    if (els.age) els.age.value = "";
+    if (els.sort) els.sort.value = "deadline";
+    render();
+  });
+}
 
-els.subscribe.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  if (!name || !email) return;
-  // Placeholder: store in Supabase later.
-  alert("Thanks! We’ll notify you soon.");
-  els.subscribe.reset();
-});
+if (els.subscribe) {
+  els.subscribe.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    if (!name || !email) return;
+    // Placeholder: store in Supabase later.
+    alert("Thanks! We’ll notify you soon.");
+    els.subscribe.reset();
+  });
+}
 
-els.shareBtn.addEventListener("click", async () => {
-  const url = els.shareLink.value;
-  if (navigator.share) {
-    try { await navigator.share({ title: "Govt Jobs India", url }); } catch {}
-  } else {
-    els.shareLink.select();
-  }
-});
+if (els.shareBtn) {
+  els.shareBtn.addEventListener("click", async () => {
+    const url = els.shareLink.value;
+    if (navigator.share) {
+      try { await navigator.share({ title: "Govt Jobs India", url }); } catch {}
+    } else {
+      els.shareLink.select();
+    }
+  });
+}
 
-els.copyLink.addEventListener("click", async () => {
-  const url = els.shareLink.value;
-  await navigator.clipboard.writeText(url);
-  alert("Link copied");
-});
+if (els.copyLink) {
+  els.copyLink.addEventListener("click", async () => {
+    const url = els.shareLink.value;
+    await navigator.clipboard.writeText(url);
+    alert("Link copied");
+  });
+}
 
 const waText = encodeURIComponent("Latest Govt Jobs in India — updated daily. Join for alerts: " + els.shareLink.value);
 els.waShare.href = `https://wa.me/?text=${waText}`;
