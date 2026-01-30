@@ -1,29 +1,48 @@
 {
   "dataGovResources": [
     {
-      "resource_id": "",
-      "title": "",
-      "category": "",
+      "resource_id": "6660e2db-2606-4e24-a62c-e3e53a42ce3a",
+      "title": "Year-wise Recruitment made by UPSC, SSC and RRBs (2016-17 to 2020-21)",
+      "category": "UPSC/SSC/RRB",
       "state": "All India",
       "sourceName": "data.gov.in",
-      "sourceUrl": ""
+      "sourceUrl": "https://www.data.gov.in/resource/year-wise-recruitment-made-upsc-ssc-and-rrbs-2016-17-2020-21"
+    },
+    {
+      "resource_id": "a0e455fc-2c82-4ccd-8bd6-14f8fd490b02",
+      "title": "Recruitment in Indian Railway Health Service (Gazetted) 2017-2021",
+      "category": "Railways",
+      "state": "All India",
+      "sourceName": "data.gov.in",
+      "sourceUrl": "https://www.data.gov.in/resource/year-wise-details-recruitment-indian-railway-health-service-gazetted-2017-2021"
+    },
+    {
+      "resource_id": "7bdf8963-b10e-4cb7-b943-ec9dbb93a712",
+      "title": "CEN-wise Recruitment Process against RRB CEN Vacancies",
+      "category": "Railways",
+      "state": "All India",
+      "sourceName": "data.gov.in",
+      "sourceUrl": "https://www.data.gov.in/resource/cen-wise-recruitment-process-against-three-centralized-employment-notifications"
     }
   ],
   "scrapeSources": [
     {
       "name": "UPSC",
-      "url": "https://upsc.gov.in/",
-      "type": "html"
+      "url": "https://upsc.gov.in/whats-new",
+      "type": "html",
+      "keywords": ["Recruitment", "Exam", "Notification", "Advt", "Vacancy"]
+    },
+    {
+      "name": "SSC",
+      "url": "https://ssc.nic.in/Portal/LatestNews",
+      "type": "html",
+      "keywords": ["Notice", "Notification", "Exam", "Recruitment", "Advt"]
     },
     {
       "name": "RRB",
       "url": "https://www.rrbcdg.gov.in/",
-      "type": "html"
-    },
-    {
-      "name": "SSC",
-      "url": "https://ssc.nic.in/",
-      "type": "html"
+      "type": "html",
+      "keywords": ["CEN", "Notification", "Recruitment", "Advt"]
     }
   ]
 }

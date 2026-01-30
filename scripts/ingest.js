@@ -43,9 +43,59 @@ async function ingestDataGov() {
   return items;
 }
 
+function stripTags(html) {
+  return html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+}
+
+function extractLinks(html, baseUrl) {
+  const links = [];
+  const re = /<a\s+[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = re.exec(html))) {
+    let href = m[1];
+    const text = stripTags(m[2]);
+    if (!text) continue;
+    if (href.startsWith("/")) href = new URL(href, baseUrl).toString();
+    if (!href.startsWith("http")) continue;
+    links.push({ href, text });
+  }
+  return links;
+}
+
 async function ingestScrapePlaceholders() {
-  // Placeholder: real scraping to be implemented per site
-  return [];
+  const items = [];
+  const today = new Date().toISOString().slice(0, 10);
+  for (const s of sources.scrapeSources || []) {
+    try {
+      const res = await fetch(s.url, {
+        headers: { "User-Agent": "Mozilla/5.0" },
+      });
+      if (!res.ok) continue;
+      const html = await res.text();
+      const links = extractLinks(html, s.url);
+      const kws = (s.keywords || []).map(k => k.toLowerCase());
+      for (const l of links) {
+        const t = l.text.toLowerCase();
+        if (!kws.some(k => t.includes(k.toLowerCase()))) continue;
+        items.push({
+          id: `${s.name}:${l.href}`,
+          title: l.text,
+          category: s.name,
+          state: "All India",
+          qualification: "",
+          ageMax: 60,
+          posted: today,
+          deadline: today,
+          source: l.href,
+          sourceName: s.name,
+          tags: ["scraped"],
+        });
+      }
+    } catch (e) {
+      // ignore
+    }
+  }
+  return items;
 }
 
 (async () => {
