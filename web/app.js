@@ -2,6 +2,7 @@ const DEMO_FALLBACK_URL = "./jobs.json";
 
 const els = {
   q: document.getElementById("q"),
+  searchBtn: document.getElementById("searchBtn"),
   category: document.getElementById("category"),
   state: document.getElementById("state"),
   qualification: document.getElementById("qualification"),
@@ -15,10 +16,24 @@ const els = {
 
 let data = [];
 
-function matches(item) {
+function normalize(item) {
+  return {
+    ...item,
+    title: item.title || "",
+    category: item.category || "Other",
+    state: item.state || "All India",
+    qualification: item.qualification || "",
+    ageMax: Number(item.ageMax || 60),
+    tags: item.tags || [],
+    sourceName: item.sourceName || "Official",
+  };
+}
+
+function matches(itemRaw) {
+  const item = normalize(itemRaw);
   const q = els.q.value.trim().toLowerCase();
   if (q) {
-    const hay = `${item.title} ${item.category} ${item.state} ${item.qualification} ${item.tags?.join(" ") || ""}`.toLowerCase();
+    const hay = `${item.title} ${item.category} ${item.state} ${item.qualification} ${item.sourceName} ${item.tags.join(" ")}`.toLowerCase();
     if (!hay.includes(q)) return false;
   }
   if (els.category.value && item.category !== els.category.value) return false;
@@ -78,6 +93,8 @@ async function loadData() {
   el.addEventListener("input", render);
   el.addEventListener("change", render);
 });
+
+els.searchBtn.addEventListener("click", render);
 
 els.reset.addEventListener("click", () => {
   els.q.value = "";
