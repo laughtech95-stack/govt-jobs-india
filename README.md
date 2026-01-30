@@ -25,6 +25,12 @@ Open `web/index.html` in your browser.
    - Output directory: `web`
 4. Deploy.
 
+## API key setup (required for data.gov.in)
+Add your key as a GitHub secret:
+- Repo → Settings → Secrets and variables → Actions → New secret
+- Name: `DATA_GOV_API_KEY`
+- Value: your data.gov.in API key
+
 ## Supabase setup (when ready)
 Create a project and add the following tables:
 

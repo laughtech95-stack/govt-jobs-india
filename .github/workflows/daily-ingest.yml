@@ -13,6 +13,8 @@ jobs:
         with:
           node-version: 20
       - run: node scripts/ingest.js
+        env:
+          DATA_GOV_API_KEY: ${{ secrets.DATA_GOV_API_KEY }}
       - name: Commit updates
         run: |
           git config user.name "govt-jobs-bot"

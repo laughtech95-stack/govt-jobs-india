@@ -1,0 +1,29 @@
+{
+  "dataGovResources": [
+    {
+      "resource_id": "",
+      "title": "",
+      "category": "",
+      "state": "All India",
+      "sourceName": "data.gov.in",
+      "sourceUrl": ""
+    }
+  ],
+  "scrapeSources": [
+    {
+      "name": "UPSC",
+      "url": "https://upsc.gov.in/",
+      "type": "html"
+    },
+    {
+      "name": "RRB",
+      "url": "https://www.rrbcdg.gov.in/",
+      "type": "html"
+    },
+    {
+      "name": "SSC",
+      "url": "https://ssc.nic.in/",
+      "type": "html"
+    }
+  ]
+}
