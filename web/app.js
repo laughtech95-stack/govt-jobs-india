@@ -1,6 +1,11 @@
 const PRIMARY_URL = `${window.location.origin}/jobs.json`;
 const FALLBACK_URL = `https://govt-jobs-india.pages.dev/jobs.json`;
 
+window.addEventListener('error', (e) => {
+  const dbg = document.getElementById('debug');
+  if (dbg) dbg.textContent = `Debug: JS error (${e.message})`;
+});
+
 const els = {
   q: document.getElementById("q"),
   searchBtn: document.getElementById("searchBtn"),
@@ -323,20 +328,22 @@ const wa = document.getElementById('waShare');
 });
 
 const exportBtn = document.getElementById('exportClicks');
-exportBtn.addEventListener('click', () => {
-  const rows = [
-    ['Date','Click Type','Count'],
-    ['today','Telegram', localStorage.getItem('click_tgJoin') || 0],
-    ['today','MockTest', localStorage.getItem('click_Free Mock Test') || 0],
-    ['today','WhatsAppShare', localStorage.getItem('click_waShare') || 0],
-  ];
-  const csv = rows.map(r => r.join(',')).join('\n');
-  const blob = new Blob([csv], {type:'text/csv'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url; a.download = 'clicks.csv'; a.click();
-  URL.revokeObjectURL(url);
-});
+if (exportBtn) {
+  exportBtn.addEventListener('click', () => {
+    const rows = [
+      ['Date','Click Type','Count'],
+      ['today','Telegram', localStorage.getItem('click_tgJoin') || 0],
+      ['today','MockTest', localStorage.getItem('click_Free Mock Test') || 0],
+      ['today','WhatsAppShare', localStorage.getItem('click_waShare') || 0],
+    ];
+    const csv = rows.map(r => r.join(',')).join('\n');
+    const blob = new Blob([csv], {type:'text/csv'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'clicks.csv'; a.click();
+    URL.revokeObjectURL(url);
+  });
+}
 
 loadData();
 window.addEventListener('load', () => loadData());
