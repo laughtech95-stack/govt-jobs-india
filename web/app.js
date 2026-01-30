@@ -1,4 +1,4 @@
-const DEMO_FALLBACK_URL = "https://govt-jobs-india.pages.dev/jobs.json";
+const DEMO_FALLBACK_URL = `${window.location.origin}/jobs.json`;
 
 const els = {
   q: document.getElementById("q"),
@@ -81,7 +81,10 @@ function render() {
   items = sortItems(items);
   els.count.textContent = `${items.length} result(s)`;
   const dbg = document.getElementById('debug');
-  if (dbg) dbg.textContent = `Debug: items=${items.length} total=${data.length}`;
+  if (dbg) {
+    if (loadError) dbg.textContent = `Debug: fetch failed (${loadError.message})`;
+    else dbg.textContent = `Debug: items=${items.length} total=${data.length}`;
+  }
 
   const related = items.slice(0, 4).map(i => `<a href="/pages/${(i.category||'other').toLowerCase().replace(/\s+/g,'-')}-jobs.html">${i.category||'Other'} jobs</a>`).join(" · ");
 
@@ -150,6 +153,7 @@ function render() {
   }
 }
 
+let loadError = null;
 async function loadData() {
   try {
     const res = await fetch(DEMO_FALLBACK_URL, {cache: 'no-cache'});
@@ -158,8 +162,7 @@ async function loadData() {
     data = Array.isArray(json) ? json : [];
   } catch (e) {
     data = [];
-    const dbg = document.getElementById('debug');
-    if (dbg) dbg.textContent = `Debug: fetch failed (${e.message})`;
+    loadError = e;
   }
   render();
 }
